@@ -465,7 +465,7 @@ table {
 	margin: 0;
 	font-weight: 600;
 	line-height: 95px;
-	text-transform: uppercase;
+	letter-spacing: 1.5px;
 }
 .hero h1 span {
 	color:#a1a9b0;
