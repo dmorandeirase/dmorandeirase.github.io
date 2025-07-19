@@ -1255,3 +1255,58 @@ ul.slides li {
   font-size: 18px;
   color: #666;
 }
+
+/* === Clean Modern Skills Section === */
+.skills .row {
+  margin: 0 -10px; /* Negative margin to compensate for column padding */
+}
+
+.skills [class*="col-"] {
+  padding: 10px; /* Spacing between columns */
+}
+
+.skill-box {
+  height: 100%; /* Make all boxes equal height */
+  /* Keep your existing styles */
+}
+
+.skills {
+  background: #f3f5f8; /* subtle background */
+}
+
+.skill-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 50px 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.skill-icon {
+  font-size: 60px;
+  color: #E04343;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.skill-box:hover .skill-icon {
+  transform: scale(1.2);
+}
+
+.skill-box h2 {
+  font-size: 22px;
+  color: #353535;
+  margin-bottom: 10px;
+}
+
+.skill-box p {
+  color: #474849;
+  font-size: 16px;
+  line-height: 1.6;
+}
