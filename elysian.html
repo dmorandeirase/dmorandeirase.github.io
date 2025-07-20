@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Optional: Animate on scroll CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body id="top">
+
+  <!-- HEADER & MENU -->
+  <header id="home">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="menu-wrap">
+          <nav class="menu">
+            <div class="icon-list">
+              <a href="index.html#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
+              <a href="index.html#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
+              <a href="index.html#portfolio"><i class="fa fa-fw fa-laptop"></i><span>Portfolio</span></a>
+              <a href="index.html#skills"><i class="fa fa-fw fa-wrench"></i><span>Skills</span></a>
+              <a href="index.html#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
+            </div>
+          </nav>
+        </div>
+        <button class="menu-button" id="open-button"></button>
+      </div>
+    </div>
+    <!-- Hero -->
+    <section class="hero text-center" id="hero" style="background-color:#f9f9f9; padding: 80px 0 40px;">
+    <div class="container">
+        <h1 style="font-size:36px; font-weight:600; color:#E04343; margin-bottom:10px;">Elysian Siege</h1>
+        <div style="width:60px; height:3px; background:#E04343; margin: 0 auto 15px;"></div>
+        <p style="max-width:800px; margin:0 auto; font-size:18px; color:#666;">
+            Platformer 2.5D
+        </p>
+    </div>
+    </section>
+  </header>
+
+  <!-- PROJECT DETAIL SECTION -->
+    <section class="project-detail">
+        <div class="project-grid">
+            <div class="project-image" data-aos="fade-right">
+                <div class="video-wrapper">
+                    <iframe class="project-video"
+                        src="https://www.youtube.com/embed/vdvlsxR2pmE"
+                        title="OptimusEngine video" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="project-description" data-aos="fade-left">
+            <h2>Description</h2>
+            <p>
+                The final project for my HND in Game Programming, developed over nine months by a multidisciplinary team of 16 members, including programmers, artists, and designers. 
+                Created in Unreal Engine 5, the game delivers roughly 90 minutes of immersive gameplay.<br>
+                This is a fast-paced, dynamic 2.5D platformer where the player takes on the role of Keziah, a Celestial from the order of the Goddess of Nature. 
+                The player must venture deep into a temple, overcoming various challenges such as enemies, traps, and more.<br><br>
+                You can download it free on <b>Steam</b> by clicking this <a href="https://store.steampowered.com/app/3719080/Elysian_Siege/" target="_blank" rel="noopener noreferrer"> LINK </a>
+            </p>
+            <div class="tags">
+                <span class="tag">Unreal Engine 5</span>
+                <span class="tag">C++</span>
+                <span class="tag">Perforce</span>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-detail" style="background-color:#fff;">
+    <div class="container">
+      <!-- Divider -->
+      <h1 class="arrow" style="margin:100px 0;">
+            My <span>Tasks</span>
+      </h1>
+
+      <div class="row align-items-center">
+        <div class="col-md-6" data-aos="fade-right">
+          <video controls class="project-video">
+            <source src="videos/hopshop-demo.mp4" type="video/mp4">
+            Your web browser doesn't support the video
+          </video>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <h3 style="color:#E04343; font-weight:700; font-size:24px;">Enemies</h3>
+          <p style="color:#474849; font-size:16px;">
+            In this project, my main responsibility was focused on the enemies. I was in charge of creating a foundational base for all enemy types in the game 
+            (melee, tank, flying, and ranged), which included a patrol system following nodes placed throughout the level and a player detection system using Unreal's 
+            perception system. After that, I concentrated on the full development of the melee and tank enemies, handling both their behavior through the use of behavior 
+            trees and the integration of their animations.
+          </p>
+        </div>
+      </div>
+
+      <hr style="margin:50px 0; border-top:1px solid #eee;">
+
+      <div class="row align-items-center">
+        <div class="col-md-6" data-aos="fade-left">
+          <h3 style="color:#E04343; font-weight:700; font-size:24px;">Melee Enemy</h3>
+          <p style="color:#474849; font-size:16px;">
+            The purpose of the melee enemy is to act as an obstacle for the player as they progress through the game, without becoming overly frustrating.
+             Its behavior is based on patrolling an area and, upon detecting the player, quickly rushing in to attack. 
+             The player can defeat it either by jumping on it or by dashing it.
+          </p>
+        </div>
+        <div class="col-md-6" data-aos="fade-right">
+          <video controls class="project-video">
+            <source src="videos/hopshop-demo.mp4" type="video/mp4">
+            Your web browser doesn't support the video
+          </video>
+        </div>
+      </div>
+
+      <hr style="margin:50px 0; border-top:1px solid #eee;">
+
+      <div class="row align-items-center">
+        <div class="col-md-6" data-aos="fade-right">
+          <video controls class="project-video">
+            <source src="videos/hopshop-demo.mp4" type="video/mp4">
+            Your web browser doesn't support the video
+          </video>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <h3 style="color:#E04343; font-weight:700; font-size:24px;">Tank Enemy</h3>
+          <p style="color:#474849; font-size:16px;">
+            The tank enemy is the most challenging to defeat and is designed to present a challenge for the player. This enemy only appears in specific combat areas,
+             where the player has no choice but to defeat it in order to progress. The player cannot damage this enemy until it reveals its weak point. 
+             The tank enemy approaches the player intending to strike with its mace. When it attacks, it slams the mace into the ground, releasing a shockwave. 
+             After finishing its attack, the enemy briefly exposes its weak point, giving the player a window of opportunity to deal damage.
+          </p>
+        </div>
+      </div>
+
+      <hr style="margin:50px 0; border-top:1px solid #eee;">
+
+      <div class="row align-items-center">
+        <div class="col-md-6" data-aos="fade-left">
+          <h3 style="color:#E04343; font-weight:700; font-size:24px;">Combat Zone</h3>
+          <p style="color:#474849; font-size:16px;">
+            As the player progresses through the game, they will encounter enemies, but they don't necessarily have to defeat them to move forward, except in specific areas called combat zones. 
+            When the player enters these zones, they will be locked in this area and they must defeat all the enemies there in order to continue.
+          </p>
+        </div>
+        <div class="col-md-6" data-aos="fade-right">
+          <video controls class="project-video">
+            <source src="videos/hopshop-demo.mp4" type="video/mp4">
+            Your web browser doesn't support the video
+          </video>
+        </div>
+      </div>
+
+      <hr style="margin:50px 0; border-top:1px solid #eee;">
+
+      <div class="row align-items-center">
+        <div class="col-md-6" data-aos="fade-right">
+          <video controls class="project-video">
+            <source src="videos/hopshop-demo.mp4" type="video/mp4">
+            Your web browser doesn't support the video
+          </video>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <h3 style="color:#E04343; font-weight:700; font-size:24px;">Level Streaming and Optimization Volumes</h3>
+          <p style="color:#474849; font-size:16px;">
+            For optimization purposes, a level streaming system and a optimization volumen system were created and used by the designers. 
+            The level streaming system handles loading and unloading different areas of the game, helping to reduce resource consumption. 
+            The optimization volume system handles if different actors of the game should appear or not when the player revisits an area of the game, for example if 
+            the player collected all the pickups from an area so they don't appear again.
+          </p>
+        </div>
+      </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container text-center">
+      <p>All Rights Reserved. &copy; 2025 Diego Morandeira Seijas</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Animate on scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>
