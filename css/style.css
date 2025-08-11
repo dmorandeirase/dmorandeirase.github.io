@@ -1396,6 +1396,97 @@ ul.slides li {
   border-bottom: none !important;
 }
 
+.project-detail .col-md-8 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* crops a bit if needed */
+}
+
+.hero-carousel {
+  position: relative; /* makes indicators & nav position relative to this container */
+  overflow: hidden;
+  max-width: 100%;
+  height: 400px; /* same height as images */
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 15px; /* distance from bottom of carousel */
+  width: 100%; /* make them span the full carousel width */
+  display: flex;
+  justify-content: center; /* center the dots horizontally */
+  gap: 8px; /* space between dots */
+  z-index: 10;
+  left: 0; /* ensure starting from left edge */
+  transform: none; /* remove old translateX centering */
+}
+
+.indicator {
+  height: 12px;
+  width: 12px;
+  background: rgba(255,255,255,0.6);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background: white;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-prev { left: 10px; }
+.carousel-next { right: 10px; }
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 15px;
+  left: 80%;
+  transform: translateX(-50%);
+}
+
+.indicator {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background: rgba(255,255,255,0.6);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background: white;
+}
+
 @media (max-width: 991px) {
   .project-detail .project-grid {
     grid-template-columns: 1fr;

@@ -61,4 +61,31 @@ Menu
 
 })();
 
+(function() {
+	let currentIndex = 0;
+	const slides = document.querySelectorAll('.carousel-slide');
+	const indicators = document.querySelectorAll('.indicator');
+	const track = document.getElementById('mainCarousel');
 
+	function updateCarousel() {
+		track.style.transform = `translateX(-${currentIndex * 100}%)`;
+		indicators.forEach((dot, idx) => {
+			dot.classList.toggle('active', idx === currentIndex);
+		});
+	}
+
+	window.changeSlide = function(direction) {
+		currentIndex = (currentIndex + direction + slides.length) % slides.length;
+		updateCarousel();
+	}
+
+	window.currentSlide = function(index) {
+		currentIndex = index;
+		updateCarousel();
+	}
+
+	// Optional: Auto-play
+	setInterval(() => {
+		window.changeSlide(1);
+	}, 7000);
+})();
