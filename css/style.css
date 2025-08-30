@@ -1314,11 +1314,6 @@ ul.slides li {
   font-size: 40px;
 }
 
-.project-detail .project-description p {
-  font-size: 20px;
-  line-height: 1.8;
-}
-
 /* Padding between image & text */
 .project-detail .project-description {
   padding-left: 20px;
@@ -1485,6 +1480,34 @@ ul.slides li {
 
 .indicator.active {
   background: white;
+}
+
+/* Project detail list styles */
+.project-detail .project-description ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0;
+}
+
+.project-detail .project-description ul li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #7c7e80;              /* same as paragraph text */
+}
+
+/* Modern circular bullet */
+.project-detail .project-description ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(to right, #E04343, #c32e2e); /* theme gradient */
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
 
 @media (max-width: 991px) {
