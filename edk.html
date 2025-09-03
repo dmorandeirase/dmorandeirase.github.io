@@ -36,6 +36,9 @@
     <div class="container">
         <h1 style="font-size:36px; font-weight:600; color:#E04343; margin-bottom:10px;">Landscape Simulator</h1>
         <div style="width:60px; height:3px; background:#E04343; margin: 0 auto 15px;"></div>
+        <p style="max-width:800px; margin:0 auto; font-size:18px; color:#666;">
+          Graphyc Programming
+        </p>
     </div>
     </section>
   </header>
@@ -58,7 +61,9 @@
             <div class="project-description" data-aos="fade-left">
             <h2>Description</h2>
             <p>
-              This is a project made in collaboration with <a href="https://www.linkedin.com/in/daniel-de-castro-isasi-99aa58220/">Daniel de Castro Isasi</a> using the EDK3 Engine, which is a graphic engine given to us by the College to familiarize us with graphics programming using OpenGL and GLSL and a mathemathical library made by us. 
+              This is a project made in collaboration with <a href="https://www.linkedin.com/in/daniel-de-castro-isasi-99aa58220/" target="_blank">Daniel de Castro Isasi</a> 
+              using the EDK3 Engine, which is a graphic engine given to us by the College to familiarize us with graphics programming using OpenGL and GLSL. 
+              We also use a mathemathical library and a tweening library made by us.
               <br>In this project we reimplemented the OpenGL render to make white-box testing and also developed these features:
             </p>
             <ul>
@@ -85,6 +90,130 @@
             </div>
         </div>
     </section>
+
+    <section class="project-detail" style="background-color:#fff;">
+    <div class="container">
+      <!-- Divider -->
+      <h1 class="arrow" style="margin:50px 0;">
+            My <span>Tasks</span>
+      </h1>
+
+      <div class="row align-items-center">
+        <div class="col-md-4" data-aos="fade-left">
+          <h3 style="color:#E04343; font-weight:700; font-size:24px;">Initial Terrain Generation with Noise and Normals</h3>
+          <p style="color:#474849; font-size:16px;">
+            The terrain is initially generated based on the following parameters: number of rows, number of columns, noise height, noise smoothness and size.  
+            When noise-related calculations are made, normals are also calculated.
+          </p>
+        </div>
+        <div class="col-md-8" data-aos="fade-right">
+          <section class="hero-carousel" style="height:600px">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img src="img/portfolio/edk/terrain1.png" alt="Slide 1" style="height:90%">
+              </div>
+              <div class="carousel-slide">
+                <img src="img/portfolio/edk/terrain2.png" alt="Slide 2" style="height:90%">
+              </div>
+              <div class="carousel-slide">
+                <img src="img/portfolio/edk/terrain3.png" alt="Slide 3" style="height:90%">
+              </div>
+            </div>
+
+            <!-- Navigation -->
+            <button class="carousel-nav carousel-prev">❮</button>
+            <button class="carousel-nav carousel-next">❯</button>
+
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+              <span class="indicator active"></span>
+              <span class="indicator"></span>
+              <span class="indicator"></span>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <hr style="margin:50px 0; border-top:1px solid #eee;">
+
+      <div class="row align-items-center">
+        <div class="col-md-8" data-aos="fade-right">
+          <section class="hero-carousel" style="height:600px">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img src="img/portfolio/edk/lights1.png" alt="Slide 1" style="height:90%">
+              </div>
+              <div class="carousel-slide">
+                <img src="img/portfolio/edk/lights2.png" alt="Slide 2" style="height:90%">
+              </div>
+              <div class="carousel-slide">
+                <img src="img/portfolio/edk/lights3.png" alt="Slide 3" style="height:70%">
+              </div>
+            </div>
+
+            <!-- Navigation -->
+            <button class="carousel-nav carousel-prev">❮</button>
+            <button class="carousel-nav carousel-next">❯</button>
+
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+              <span class="indicator active"></span>
+              <span class="indicator"></span>
+              <span class="indicator"></span>
+            </div>
+          </section>
+        </div>
+        <div class="col-md-4" data-aos="fade-left">
+          <h3 style="color:#E04343; font-weight:700; font-size:24px;">Lighting</h3>
+          <p style="color:#474849; font-size:16px;">
+            In this project we have three types of lights that are applied to the stage: point light, spot light and directional light.  
+            Up to seven lights can be active at the same time and all related calculations are performed in GLSL.
+          </p>
+        </div>
+      </div>
+
+      <hr style="margin:50px 0; border-top:1px solid #eee;">
+
+      <div class="row align-items-center">
+        <div class="col-md-4" data-aos="fade-left">
+          <h3 style="color:#E04343; font-weight:700; font-size:24px;">CRT Post-processes Effect</h3>
+          <p style="color:#474849; font-size:16px;">
+            There is the possibility to apply a CRT post-processes effect to the simulation. This effect is calculated in GLSL.
+          </p>
+        </div>
+        <div class="col-md-8" data-aos="fade-right">
+          <img src="img/portfolio/edk/crt.png" alt="Game Project 2" style="border-radius:10px">
+        </div>
+      </div>
+
+      <hr style="margin:50px 0; border-top:1px solid #eee;">
+
+      <div class="row align-items-center">
+        <div class="col-md-8" data-aos="fade-right">
+          <img src="img/portfolio/edk/Cubemap.png" alt="Game Project 2" style="border-radius:10px">
+        </div>
+        <div class="col-md-4" data-aos="fade-left">
+          <h3 style="color:#E04343; font-weight:700; font-size:24px;">Cubemap</h3>
+          <p style="color:#474849; font-size:16px;">
+            There is a cubemap that serves as a skybox to make the experience more enjoyable and immersive.
+          </p>
+        </div>
+      </div>
+
+      <hr style="margin:50px 0; border-top:1px solid #eee;">
+
+      <div class="row align-items-center">
+        <div class="col-md-4" data-aos="fade-left">
+          <h3 style="color:#E04343; font-weight:700; font-size:24px;">STB Texture Loading</h3>
+          <p style="color:#474849; font-size:16px;">
+            The EDK3 has its own texture load working, but we did not have full access to its operation, so apart from that I used STB to have total control of the loading of my disk textures.
+          </p>
+        </div>
+        <div class="col-md-8" data-aos="fade-right">
+          <img src="img/portfolio/edk/stb.png" alt="Game Project 2" style="border-radius:10px">
+        </div>
+      </div>
+  </section>
 
   <!-- FOOTER -->
   <footer>

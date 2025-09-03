@@ -62,30 +62,55 @@ Menu
 })();
 
 (function() {
-	let currentIndex = 0;
-	const slides = document.querySelectorAll('.carousel-slide');
-	const indicators = document.querySelectorAll('.indicator');
-	const track = document.getElementById('mainCarousel');
+	// Find all carousels on the page
+	const carousels = document.querySelectorAll('.hero-carousel');
+	
+	// Initialize each carousel
+	carousels.forEach((carousel, carouselIndex) => {
+		const track = carousel.querySelector('.carousel-track');
+		const slides = carousel.querySelectorAll('.carousel-slide');
+		const indicators = carousel.querySelectorAll('.indicator');
+		const prevButton = carousel.querySelector('.carousel-prev');
+		const nextButton = carousel.querySelector('.carousel-next');
+		
+		let currentIndex = 0;
 
-	function updateCarousel() {
-		track.style.transform = `translateX(-${currentIndex * 100}%)`;
-		indicators.forEach((dot, idx) => {
-			dot.classList.toggle('active', idx === currentIndex);
+		function updateCarousel() {
+			track.style.transform = `translateX(-${currentIndex * 100}%)`;
+			indicators.forEach((dot, idx) => {
+				dot.classList.toggle('active', idx === currentIndex);
+			});
+		}
+
+		function changeSlide(direction) {
+			currentIndex = (currentIndex + direction + slides.length) % slides.length;
+			updateCarousel();
+		}
+
+		function goToSlide(index) {
+			currentIndex = index;
+			updateCarousel();
+		}
+
+		// Add event listeners for navigation buttons
+		if (prevButton) {
+			prevButton.addEventListener('click', () => changeSlide(-1));
+		}
+		if (nextButton) {
+			nextButton.addEventListener('click', () => changeSlide(1));
+		}
+
+		// Add event listeners for indicators
+		indicators.forEach((indicator, index) => {
+			indicator.addEventListener('click', () => goToSlide(index));
 		});
-	}
 
-	window.changeSlide = function(direction) {
-		currentIndex = (currentIndex + direction + slides.length) % slides.length;
+		// Optional: Auto-play for each carousel
+		setInterval(() => {
+			changeSlide(1);
+		}, 7000);
+
+		// Initialize the carousel
 		updateCarousel();
-	}
-
-	window.currentSlide = function(index) {
-		currentIndex = index;
-		updateCarousel();
-	}
-
-	// Optional: Auto-play
-	setInterval(() => {
-		window.changeSlide(1);
-	}, 7000);
+	});
 })();
