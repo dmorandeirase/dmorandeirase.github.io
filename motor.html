@@ -34,10 +34,10 @@
     <!-- Hero -->
     <section class="hero text-center" id="hero" style="background-color:#f9f9f9; padding: 80px 0 40px;">
     <div class="container">
-        <h1 style="font-size:36px; font-weight:600; color:#E04343; margin-bottom:10px;">Elysians Siege</h1>
+        <h1 style="font-size:36px; font-weight:600; color:#E04343; margin-bottom:10px;">Optimus Engine</h1>
         <div style="width:60px; height:3px; background:#E04343; margin: 0 auto 15px;"></div>
         <p style="max-width:800px; margin:0 auto; font-size:18px; color:#666;">
-            Platformer 2.5D
+          Graphyc Programming
         </p>
     </div>
     </section>
@@ -60,10 +60,28 @@
             <div class="project-description" data-aos="fade-left">
             <h2>Description</h2>
             <p>
-                Graphics engine developed from scratch using C++ and OpenGL. Features advanced techniques such as forward and deferred rendering with multiples lights, shadow casting, portals, 
-                physics using the Bullet library, Lua scripting, loading with Assimp, and an ECS architecture with hierarchies. 
-                It also includes integrated editing tools with ImGui and a threading system for heavy tasks.
+                Graphics engine developed from scratch using C++ and OpenGL in collaboration with <a href="https://www.linkedin.com/in/daniel-de-castro-isasi-99aa58220/" target="_blank">Daniel de Castro Isasi</a>. 
+                The development of this engine involved using the RAII programming idiom for the classes that make up the project. It includes integrated editing tools with ImGui and a threading system for heavy tasks.
+                <br>The duration of this project is 9 months from September 2024 to May 2025.
+                <br>These are the features of the engine:
             </p>
+            <ul>
+              <li>Entity Component System (ECS) architecture with object hierarchies</li>
+              <li>Lit and unlit forward rendering</li>
+              <li>Deferred rendering</li>
+              <li>Lighting (directional light, point light and spot light)</li>
+              <li>Shadows</li>
+              <li>Skybox</li>
+              <li>Portals</li>
+              <li>Flycam with perspective and matrix positioning</li>
+              <li>Physics simulation with Bullet</li>
+              <li>ImGui and Guizmos</li>
+              <li>Multi-threaded job system</li>
+              <li>Saving system</li>
+              <li>Objects and texture loading to disk using Assimp</li>
+              <li>Input system that handles keyboard and mouse</li>
+              <li>Management of multiple shaders (vertex, fragment and geometry)</li>
+            </ul>
             <div class="tags">
                 <span class="tag">C++</span>
                 <span class="tag">OpenGL</span>
@@ -84,16 +102,39 @@
 
       <div class="row align-items-center">
         <div class="col-md-6" data-aos="fade-right">
-          <video controls class="project-video">
-            <source src="videos/hopshop-demo.mp4" type="video/mp4">
-            Your web browser doesn't support the video
-          </video>
+          <section class="hero-carousel" style="height:500px">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img src="img/portfolio/motor/render1.JPG" alt="Slide 1" style="height:100%">
+              </div>
+              <div class="carousel-slide">
+                <img src="img/portfolio/motor/render2.JPG" alt="Slide 2" style="height:100%">
+              </div>
+              <div class="carousel-slide">
+                <img src="img/portfolio/motor/render3.JPG" alt="Slide 3" style="height:100%">
+              </div>
+            </div>
+
+            <!-- Navigation -->
+            <button class="carousel-nav carousel-prev">❮</button>
+            <button class="carousel-nav carousel-next">❯</button>
+
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+              <span class="indicator active"></span>
+              <span class="indicator"></span>
+              <span class="indicator"></span>
+            </div>
+          </section>
         </div>
         <div class="col-md-6" data-aos="fade-left">
-          <h3 style="color:#E04343; font-weight:700; font-size:24px;">Test</h3>
+          <h3 style="color:#E04343; font-weight:700; font-size:24px;">Graphics Rendering</h3>
           <p style="color:#474849; font-size:16px;">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac sem vitae neque ultricies varius. Nunc a est arcu. ç
-            Mauris a purus cursus, tincidunt enim mattis, pulvinar nisl.
+            The engine can render using two different techniques, the forward rendering and the deferred rendering. 
+            On one hand there is the forward rendering which can be lit or unlit where each object in the scene is drawn directly to the screen, 
+            one by one, with lighting effects calculated for each pixel of that object in a single pass.<br> On the other hand, we have the deferred rendering. 
+            This is a screen-space lighting technique in 3D computer graphics that separates the rendering process into two phases: geometry and lighting. Using this 
+            we avoid to calculating the lighting of the scene per object and process it per pixel on the screen.
           </p>
         </div>
       </div>
@@ -101,21 +142,160 @@
       <hr style="margin:50px 0; border-top:1px solid #eee;">
 
       <div class="row align-items-center">
-        <div class="col-md-6" data-aos="fade-left">
-          <h3 style="color:#E04343; font-weight:700; font-size:24px;">Test</h3>
+        <div class="col-md-4" data-aos="fade-left">
+          <h3 style="color:#E04343; font-weight:700; font-size:24px;">Lighting</h3>
           <p style="color:#474849; font-size:16px;">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac sem vitae neque ultricies varius. Nunc a est arcu. ç
-            Mauris a purus cursus, tincidunt enim mattis, pulvinar nisl.
+            The engine can render three types of lights (point light, spot light and directional light) and blend them. It has the ability to render as much light as your computer is capable of processing.
           </p>
         </div>
+        <div class="col-md-8" data-aos="fade-right">
+          <section class="hero-carousel" style="height:500px">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img src="img/portfolio/motor/lights3.JPG" alt="Slide 1" style="height:100%">
+              </div>
+              <div class="carousel-slide">
+                <img src="img/portfolio/motor/lights2.JPG" alt="Slide 2" style="height:100%">
+              </div>
+              <div class="carousel-slide">
+                <img src="img/portfolio/motor/lights1.JPG" alt="Slide 3" style="height:100%">
+              </div>
+            </div>
+
+            <!-- Navigation -->
+            <button class="carousel-nav carousel-prev">❮</button>
+            <button class="carousel-nav carousel-next">❯</button>
+
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+              <span class="indicator active"></span>
+              <span class="indicator"></span>
+              <span class="indicator"></span>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <hr style="margin:50px 0; border-top:1px solid #eee;">
+
+      <div class="row align-items-center">
         <div class="col-md-6" data-aos="fade-right">
-          <video controls class="project-video">
-            <source src="videos/hopshop-demo.mp4" type="video/mp4">
-            Your web browser doesn't support the video
-          </video>
+          <section class="hero-carousel" style="height:400px">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img src="img/portfolio/motor/shadows2.JPG" alt="Slide 1" style="height:100%">
+              </div>
+              <div class="carousel-slide">
+                <img src="img/portfolio/motor/shadows3.JPG" alt="Slide 2" style="height:100%">
+              </div>
+              <div class="carousel-slide">
+                <img src="img/portfolio/motor/shadows1.JPG" alt="Slide 3" style="height:100%">
+              </div>
+            </div>
+
+            <!-- Navigation -->
+            <button class="carousel-nav carousel-prev">❮</button>
+            <button class="carousel-nav carousel-next">❯</button>
+
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+              <span class="indicator active"></span>
+              <span class="indicator"></span>
+              <span class="indicator"></span>
+            </div>
+          </section>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <h3 style="color:#E04343; font-weight:700; font-size:24px;">Shadows</h3>
+          <p style="color:#474849; font-size:16px;">
+            To cast shadows we used two different techniques: shadow mapping for the directional light and spotlight, and point shadow for the point light.<br>
+            The shadow map technique renders the scene from the light's point of view to store depth in a texture, then compares fragment depth against it during 
+            rendering to decide if a point is lit or in shadow.<br>
+            The point shadow technique uses a cube shadow map by rendering the scene from a point light in all six directions, 
+            then compares fragment distance to the stored depth to determine shadowing.
+          </p>
+        </div>
+      </div>
+
+      <hr style="margin:50px 0; border-top:1px solid #eee;">
+
+      <div class="row align-items-center">
+        <div class="col-md-4" data-aos="fade-left">
+          <h3 style="color:#E04343; font-weight:700; font-size:24px;">Skybox</h3>
+          <p style="color:#474849; font-size:16px;">
+            There is a cubemap that serves as a skybox, this was added just for stylistic reasons.
+          </p>
+        </div>
+        <div class="col-md-8" data-aos="fade-right">
+          <img src="img/portfolio/motor/skybox.JPG" alt="Game Project 2" style="border-radius:10px">
+        </div>
+      </div>
+
+      <hr style="margin:50px 0; border-top:1px solid #eee;">
+
+      <div class="row align-items-center">
+        <div class="col-md-6" data-aos="fade-right">
+          <section class="hero-carousel" style="height:500px">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img src="img/portfolio/motor/portal1.JPG" alt="Slide 1" style="height:100%">
+              </div>
+              <div class="carousel-slide">
+                <img src="img/portfolio/motor/portal2.JPG" alt="Slide 2" style="height:100%">
+              </div>
+            </div>
+
+            <!-- Navigation -->
+            <button class="carousel-nav carousel-prev">❮</button>
+            <button class="carousel-nav carousel-next">❯</button>
+
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+              <span class="indicator active"></span>
+              <span class="indicator"></span>
+            </div>
+          </section>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <h3 style="color:#E04343; font-weight:700; font-size:24px;">Portals</h3>
+          <p style="color:#474849; font-size:16px;">
+            Portals are gateways connected where we have one entry portal and one exit portal and each one renders what the other is seeing so when 
+            you are about to go through the portal you can see where you are going to teleport.
+          </p>
         </div>
       </div>
   </section>
+
+  <section class="text-center section-padding" >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="skill-box">
+              <div class="skill-icon"><i class="fa fa-code"></i></div>
+              <h2>Foundation of the ECS</h2>
+              <p>
+                The ECS implementation stores each component type in its own contiguous array, indexed by entity ID, with missing components represented using std::optional. 
+                A hash map links component type hashes to their respective arrays, keeping all components of the same type grouped together for cache efficiency.
+                 When a new entity is created, all component arrays expand to include a slot for it, and when an entity is deleted, 
+                 its slots are cleared and its ID is queued for reuse, ensuring consistent management of components and entities.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="skill-box">
+              <div class="skill-icon"><i class="fa fa-code"></i></div>
+              <h2>Management of multiple shaders</h2>
+              <p>
+                There is a class that streamlines the process of loading, compiling, linking, and using GLSL shaders. It reads the source code of vertex, 
+                fragment, and optionally geometry shaders from external files, compiles each one while checking for compilation errors, and then links them 
+                into a complete shader program. If any stage fails, it outputs an error message and terminates the program to avoid undefined behavior.
+                Once linked successfully, the shader program can be use and uniforms can be conveniently set.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   <!-- FOOTER -->
   <footer>
