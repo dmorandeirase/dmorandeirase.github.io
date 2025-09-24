@@ -76,6 +76,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 }
 audio,canvas,video {
 	display:inline-block;
+	width:100%;
 	*display:inline;
 	*zoom: 1;
 }
@@ -687,7 +688,7 @@ h1.arrow span {
 /* Portfolio Grid */
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 40px;
     margin-top: 40px;
 }
@@ -695,7 +696,7 @@ h1.arrow span {
 /* Portfolio Item */
 .portfolio-item {
     position: relative;
-    aspect-ratio: 1;
+    aspect-ratio: 16/9;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
