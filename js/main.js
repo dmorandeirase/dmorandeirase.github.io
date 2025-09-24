@@ -108,7 +108,7 @@ Menu
 		// Optional: Auto-play for each carousel
 		setInterval(() => {
 			changeSlide(1);
-		}, 7000);
+		}, 9000);
 
 		// Initialize the carousel
 		updateCarousel();
